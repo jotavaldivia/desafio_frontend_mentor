@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+
+:root{
+--color-text :rgba(0, 0, 0, 0.548);
+}
+*{
+    margin: 0;
+    padding: 0;
+ font-family: 'Kumbh Sans', sans-serif;;
+}
+
+body{
+    background-color:#1ba1ad;
+ 
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    height: 100vh;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -50%, 150%;
+    background-position-y: 200%, -180%;
+}
+
+
+.card{  
+    width: 326px;
+    height: 350px;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.205);
+}
+
+.card__head>img{
+    width: 100%;
+}
+
+
+.card__body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_body--name{
+font-size: 1.6rem;
+margin-top: 20px;
+
+}
+.card__body--country{
+margin-top: 10px;
+color: --color-text
+}
+
+span{
+  
+    font-size: 1.4rem;
+    color: --color-text
+}
+
+.card__body-img{
+    border-radius: 50%;
+margin-top: -15%;
+}
+
+.card__footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 30px;
+}
+.card__footer--social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card__footer--social>p{
+    font-size: .8rem;
+    color: --color-text
+}
